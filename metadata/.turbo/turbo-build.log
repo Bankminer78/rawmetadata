@@ -1,0 +1,35 @@
+
+> @jspsych/metadata@0.0.1 build
+> rollup --config
+
+[36m
+[1msrc/index.ts[22m → [1mdist/index.d.ts[22m...[39m
+[32mcreated [1mdist/index.d.ts[22m in [1m675ms[22m[39m
+[36m
+[1msrc/index.ts[22m → [1mdist/index.js, dist/index.cjs[22m...[39m
+[32mcreated [1mdist/index.js, dist/index.cjs[22m in [1m67ms[22m[39m
+[36m
+[1msrc/index.ts[22m → [1mdist/index.browser.js[22m...[39m
+[1m[31m[!] [1m(plugin commonjs--resolver) SyntaxError: Unexpected token (2:40) in /Users/niranjanbaskaran/git/jsPsych/node_modules/mime-db/db.json[22m[1m[39m[22m
+../../node_modules/mime-db/db.json (2:40)
+[2m1: {
+2:   "application/1d-interleaved-parityfec": {
+                                           ^
+3:     "source": "iana"
+4:   },[22m
+[2mSyntaxError: Unexpected token (2:40) in /Users/niranjanbaskaran/git/jsPsych/node_modules/mime-db/db.json
+    at Parser.pp$4.raise (/Users/niranjanbaskaran/git/jsPsych/node_modules/rollup/dist/shared/rollup.js:20521:13)
+    at Parser.pp$9.unexpected (/Users/niranjanbaskaran/git/jsPsych/node_modules/rollup/dist/shared/rollup.js:17822:8)
+    at Parser.pp$9.semicolon (/Users/niranjanbaskaran/git/jsPsych/node_modules/rollup/dist/shared/rollup.js:17799:66)
+    at Parser.pp$8.parseExpressionStatement (/Users/niranjanbaskaran/git/jsPsych/node_modules/rollup/dist/shared/rollup.js:18282:8)
+    at Parser.pp$8.parseStatement (/Users/niranjanbaskaran/git/jsPsych/node_modules/rollup/dist/shared/rollup.js:18015:24)
+    at Parser.pp$8.parseBlock (/Users/niranjanbaskaran/git/jsPsych/node_modules/rollup/dist/shared/rollup.js:18298:21)
+    at Parser.pp$8.parseStatement (/Users/niranjanbaskaran/git/jsPsych/node_modules/rollup/dist/shared/rollup.js:17980:36)
+    at Parser.pp$8.parseTopLevel (/Users/niranjanbaskaran/git/jsPsych/node_modules/rollup/dist/shared/rollup.js:17879:21)
+    at Parser.parse (/Users/niranjanbaskaran/git/jsPsych/node_modules/rollup/dist/shared/rollup.js:17651:15)
+    at Function.parse (/Users/niranjanbaskaran/git/jsPsych/node_modules/rollup/dist/shared/rollup.js:17701:35)[22m
+
+npm error Lifecycle script `build` failed with error:
+npm error Error: command failed
+npm error   in workspace: @jspsych/metadata@0.0.1
+npm error   at location: /Users/niranjanbaskaran/git/jsPsych/packages/metadata
